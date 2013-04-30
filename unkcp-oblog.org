@@ -1,0 +1,109 @@
+#+TITLE: U-blog
+#+DESCRIPTION: A stand-alone blogging system for Org-mode.
+#+DATE: 2013-02-08 19:33:26
+
+#+STARTUP: logdone
+
+#-TEMPLATE_DIR: templates
+#+URL: http://renard.github.com/o-blog
+
+#+DEFAULT_CATEGORY: Tips
+#+DISQUS: renard-o-blog
+#+FILENAME_SANITIZER: ob-sanitize-string
+#+POST_SORTER: ob-sort-posts-by-title
+
+#+POST_BUILD_SHELL: cmd 1
+#+POST_BUILD_SHELL: cmd 2
+#+POST_BUILD_SHELL: cmd 3
+#+POST_BUILD_SHELL: cmd 4
+
+
+* Quick start Guide
+  :PROPERTIES:
+  :PAGE:     index.html
+  :TEMPLATE: blog_static_no_title.html
+  :END:
+
+#+begin_o_blog_row 9
+
+#+begin_o_blog_hero_unit
+#+HTML: <h1>Unkcp-blog</h1>
+
+#+HTML: <br/>
+A chemic student's blog for noting wrting and growing up everyday.
+#+end_o_blog_hero_unit
+
+
+#+o_blog_row_column 3
+
+
+#+HTML: <div class="hero-unit" style="font-size: 200%;">
+
+
+[[file:{lisp}(ob:path-to-root){/lisp}/article.html][/icon-pencil icon-white/ article]]
+
+[[file:{lisp}(ob:path-to-root){/lisp}/picture.html][/icon-cog icon-white/ Picture]]
+
+[[https://github.com/unkcp/u-blog][/icon-github-sign icon-white/ Github]]
+
+
+#+HTML: </div>
+
+#+end_o_blog_row
+
+
+* Blog details
+** Copyright
+  :PROPERTIES:
+  :SNIPPET:  t
+  :END:
+
+Copyright © 2013 Unkcp.Yu
+
+** About
+  :PROPERTIES:
+  :SNIPPET:  t
+  :END:
+
+Blog about life, study or habits.
+
+** Navigation
+  :PROPERTIES:
+  :SNIPPET:  t
+  :END:
+
+
+- [[file:#][/icon-book icon-white/ Article]]
+  - [[file:{lisp}(ob:path-to-root){/lisp}/day.html][Day]]
+  - [[file:{lisp}(ob:path-to-root){/lisp}/night.html][Night]]
+  - [[file:{lisp}(ob:path-to-root){/lisp}/nightmare.html][Nightmare]]
+  - 
+  - [[file:{lisp}(ob:path-to-root){/lisp}/contact.html][Contact]]
+
+- [[file:{lisp}(ob:path-to-root){/lisp}/tags.html][/icon-tags icon-white/ Tags]]
+
+- [[file:{lisp}(ob:path-to-root){/lisp}/archives.html][/icon-list icon-white/ Archives]]
+
+- [[file:{lisp}(ob:path-to-root){/lisp}/index.xml][/icon-rss icon-white/ RSS]]
+
+** Navigation Footer
+  :PROPERTIES:
+  :SNIPPET:  t
+  :END:
+
+  - [[file:{lisp}(ob:path-to-root){/lisp}/index.html][/icon-home icon-white/ {lisp}(ob:gettext :home){/lisp}]]
+
+  - [[file:{lisp}(ob:path-to-root){/lisp}/tags.html][/icon-tags icon-white/ Tags]]
+
+  - [[file:{lisp}(ob:path-to-root){/lisp}/archives.html][/icon-list icon-white/ Archives]]
+
+  - [[file:{lisp}(ob:path-to-root){/lisp}/index.xml][/icon-rss icon-white/ RSS]]
+
+** Articles by tags
+  :PROPERTIES:
+  :PAGE:     tags.html
+  :TEMPLATE: blog_post-by-tags.html
+  :END:
+
+
+

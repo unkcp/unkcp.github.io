@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>U-blog</title>
+  <link href="http://renard.github.com/o-blogindex.xml" rel="self" />
+  <link href="http://renard.github.com/o-blog"/>
+  <updated>2013-02-08T19:33:26Z</updated>
+  <id>http://renard.github.com/o-blogindex.xml</id>
+  
+</feed>
